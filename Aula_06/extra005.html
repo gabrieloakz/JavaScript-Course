@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -14,13 +14,15 @@
         
         var salario = 5000.5678; 
 
-        // Usando toFixed()
-        document.write(`Número arredondado as centésimas: ` + salario.toFixed(2) ); //.toFixed() arredonda casas decimais
+        // Usando toFixed() para arredondar número
+        document.write(`Número arredondado as centésimas: ` + salario.toFixed(2) + "<br>");
 
-        // document.write(`Número com virgula: ` + salario.replace('.', ',')) //.replace('' , '') substitui algo por algo
+        // Convertendo o número para string e substituindo o ponto por vírgula
+        var salarioFormatado = salario.toString().replace('.', ','); //IMPORTANTE! CONVERTER PRA STRING
+        document.write(`Número com vírgula: ` + salarioFormatado + "<br>");
         
-        // Usando toLocaleString()
-        document.write(`Número formatado com a localização: ` + salario.toLocaleString()); //.toLocaleString() converte pra moeda
+        // Usando toLocaleString() para mostrar na moeda local
+        document.write(`Número formatado com a localização: ` + salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) + "<br>");
     </script>
 </body>
 
