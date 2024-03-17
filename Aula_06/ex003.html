@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa</title>
+    <title>Ex3</title>
     <style>
         body {
-            background-color: #5a5adf;
+            background-color: #3d3d42;
             color:white;
             font: normal 20pt Arial;
         }  
@@ -19,9 +19,12 @@
     <H1>Olá Mundo</H1>
     <p>Já me livrei da maldiçao</p>
     <script>
-        window.alert('Minha primeira mensagem') //Janela de alerta
-        window.confirm('Está gostando de JS?') //Janela com botao Ok e cancela
-        window.prompt('Qual é seu nome?') //Prompt que pergunta o nome
+        var n1 = Number(prompt('Digite um número:')) //String pra number
+        var n2 = Number(prompt('Digite outro número:')) //String pra number
+        var sum = n1 + n2
+        alert(`A soma entre ${n1} e ${n2} é = ${sum}`) //Template string: usando ${variável}
+        // (number + number) para adicao
+        // (string + string) para concatenacao
     </script>
 </body>
 </html>

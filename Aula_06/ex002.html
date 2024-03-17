@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa</title>
+    <title>Ex2</title>
     <style>
         body {
             background-color: #5a5adf;
@@ -19,9 +19,8 @@
     <H1>Olá Mundo</H1>
     <p>Já me livrei da maldiçao</p>
     <script>
-        window.alert('Minha primeira mensagem') //Janela de alerta
-        window.confirm('Está gostando de JS?') //Janela com botao Ok e cancela
-        window.prompt('Qual é seu nome?') //Prompt que pergunta o nome
+        var nome = window.prompt('Qual é seu nome?') //Prompt pergunta o nome e guarda na variável
+        window.alert('É um grande prazer em te conhecer, ' + nome + '!')
     </script>
 </body>
 </html>

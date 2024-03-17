@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tofixed e tolocaleString</h1>
+
+    <script>
+        
+        var salario = 5000.5678; 
+
+        // Usando toFixed()
+        document.write(`Número arredondado as centésimas: ` + salario.toFixed(2) ); //.toFixed() arredonda casas decimais
+
+        // document.write(`Número com virgula: ` + salario.replace('.', ',')) //.replace('' , '') substitui algo por algo
+        
+        // Usando toLocaleString()
+        document.write(`Número formatado com a localização: ` + salario.toLocaleString()); //.toLocaleString() converte pra moeda
+    </script>
+</body>
+
+</html>
